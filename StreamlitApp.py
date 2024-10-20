@@ -111,6 +111,50 @@ def main():
                     
             st.text_area("", value=response.response, height=300)
             cleanup()
+
+    # st.markdown('<h6 style="text-align: center;margin-top:20px;">Made by Karan Shrestha with ❤️</h6>', unsafe_allow_html=True)
+    st.markdown("""
+    <style>
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer-icons {
+        display: inline-block;
+        margin-left: -40px;
+        margin-top: -20px;
+    }
+    .footer-icons a {
+        color: #000;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 24px;
+    }
+    .footer-icons a:hover {
+        color: #0072b1; /* Hover color for LinkedIn */
+    }
+    .footer-icons a.github:hover {
+        color: #333; /* Hover color for GitHub */
+    }
+    </style>
+
+    <div class="footer">
+        <h6>Made by Karan Shrestha with ❤️</h6>
+        <div class="footer-icons">
+            <a href="https://github.com/karan3486" target="_blank" class="github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/karan3486/" target="_blank">
+                <i style="color:#0a66c2;" class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Add Font Awesome for icons
+    st.markdown("""
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        """, unsafe_allow_html=True)
                 
                 
 if __name__=="__main__":
