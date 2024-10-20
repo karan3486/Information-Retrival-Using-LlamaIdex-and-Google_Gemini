@@ -98,7 +98,7 @@ def main():
             document=load_data(temp_dir,isWeb)
             model=load_model()
             query_engine=download_gemini_embedding(model,document)
-            st.markdown('<p class="custom-label">Response from URL:</p>', unsafe_allow_html=True)
+            st.markdown('<p class="custom-label">Response from Bot:</p>', unsafe_allow_html=True)
             if user_URL:
                 index = SummaryIndex.from_documents(document)
                 # set Logging to DEBUG for more detailed outputs
