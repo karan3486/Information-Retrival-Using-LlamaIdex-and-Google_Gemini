@@ -3,9 +3,11 @@ llama-index
 google-generativeai
 llama-index-llms-gemini
 pypdf
+docx2txt
 python-dotenv
 IPython
 llama-index-embeddings-gemini
 streamlit
+llama-index-readers-web
 
 #-e .
