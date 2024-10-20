@@ -3,6 +3,8 @@
 
 This project implements an AI-powered document and URL-based Q&A system using LlamaIndex and Google Gemini for information retrieval, deployed on Streamlit.
 
+CheckOut the Project here:  https://info-retrieval.streamlit.app/
+
 ![image](https://github.com/user-attachments/assets/9ce6c812-d618-4cae-8682-c7c2e85e3a42)     ![image](https://github.com/user-attachments/assets/803f01da-8db6-48a1-afab-c07c3118884a)
 
 ![image](https://github.com/user-attachments/assets/eb63d0bd-7503-42b6-9f2c-bdfc56817752)
