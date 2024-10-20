@@ -96,6 +96,8 @@ def main():
                 temp_dir = user_URL
                 isWeb = True
             document=load_data(temp_dir,isWeb)
+            model=load_model()
+            query_engine=download_gemini_embedding(model,document)
             st.markdown('<p class="custom-label">Response from URL:</p>', unsafe_allow_html=True)
             if user_URL:
                 index = SummaryIndex.from_documents(document)
@@ -105,9 +107,6 @@ def main():
                 # st.write(response.response)
                 
             else:
-                model=load_model()
-                query_engine=download_gemini_embedding(model,document)
-                    
                 response = query_engine.query(user_question)
                     
             st.text_area("", value=response.response, height=300)
